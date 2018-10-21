@@ -1,0 +1,143 @@
+CREATE TABLE animals (
+ID INT(11) NOT NULL AUTO_INCREMENT,
+PuppyName VARCHAR(256) NULL,
+Breed INT(11) NULL,
+Description VARCHAR(256) NULL,
+Price DECIMAL(10,2) NULL,
+Picture VARCHAR(256) NULL,
+    PRIMARY KEY(ID),
+    FOREIGN KEY(Breed) REFERENCES breeds(Breed)
+)
+
+
+INSERT INTO `animals`(`ID`, `PuppyName`, `Breed`, `Description`, `Price`, `Picture`) VALUES
+(,'Johnny','4','Good for a farm','100.00','Johnny.jpg'),
+(,'Bully','3','A figther, excellent watchdog','599.00','Bully.jpg'),
+(,'Bo-Bo','2','Suit sweet old lady','150.00','Bo-Bo.jpg'),
+(,'Albert','6','Family Dog','20.00','Albert.jpg'),
+(,'Fritz','1','Watchdog','129.00','Fritz.jpg'),
+(,'Sam','7','Good for nothing','10.00','Sam.jpg'),
+(,'Teddy','8','cuddly','150.00','Teddy.jpg')
+
+
+CREATE TABLE data_mhs (
+NIM VARCHAR(12) NOT NULL,
+nama_lengkap VARCHAR(64) NULL,
+prodi VARCHAR(64) NULL,
+fakultas VARCHAR(64) NULL,
+universitas VARCHAR(64) NULL,
+Picture VARCHAR(256) NULL,
+    PRIMARY KEY(NIM)
+)
+
+CREATE TABLE riwayat_pendidikan (
+ID INT(11) NOT NULL,
+tingkat VARCHAR(64) NULL,
+tahun_masuk DATE NULL,
+tahun_lulus DATE NULL,
+    PRIMARY KEY(ID)
+)
+
+
+
+INSERT INTO `matkul`(`kode`, `nama_matkul`, `semester`, `sks`) VALUES 
+('TIK101','Pengantar Informatika','Semester Gasal 2016','3'),
+('UNG101','Pendidikan Agama Islam','Semester Gasal 2016','3'),
+('UNG110','Bahasa Inggris','Semester Gasal 2016','2'),
+('TIK105','Bahasa Indonesia','Semester Gasal 2016','2'),
+('TIK104','Matematika','Semester Gasal 2016','3'),
+('TIK103','Logika Informatika','Semester Gasal 2016','2'),
+('TIK102','Semester Gasal 2016','Algoritma Pemrograman','4'),
+('TIK206','Statistika','Semester Genap 2016','3'),
+('TIK205','Fisika Informatika','Semester Genap 2016','3'),
+('TIK204','Organisasi Komputer','Semester Genap 2016','3'),
+('TIK203','Dasar Pemrograman Web','Semester Genap 2016','4'),
+('TIK202','Struktur Data','Semester Genap 2016','4'),
+('UNG108','Pancasila dan Kewarganegaraan','Semester Genap 2016','2'),
+('TIK301','Matematika Diskrit','Semester Gasal 2017','3'),
+('TIK302','Sistem Basis Data','Semester Gasal 2017','2'),
+('TIK303','Pemrograman Berorientasi Objek','','4'),
+('TIK304','Sistem Operasi','Semester Gasal 2017','3'),
+('TIK305','Rekayasa Multimedia','Semester Gasal 2017','3'),
+('TIK306','Pemrograman Desktop','Semester Gasal 2017','4'),
+('TIK401','Jaringan Komputer','Semester Genap 2017','4'),
+('TIK403','Sistem Informasi','Semester Genap 2017','3'),
+('TIK404','Bahasa Formal dan Otomata','Semester Genap 2017','3'),
+('TIK405','Pengelolaan Basis Data','Semester Genap 2017','3'),
+('TIK801','Wawasan Teknologi dan Komunikasi','Semester Genap 2017','2'),
+('TIK201','Komputasi Aljabar Linier','Semester Genap 2017','3')
+
+
+
+
+CREATE TABLE jantung_koroner (
+ID INT(11) NOT NULL AUTO_INCREMENT,
+umur VARCHAR(2) NULL,
+diagnosis_dokter_d DECIMAL(10,2)NULL,
+estimasi_jumlah_absolute_d VARCHAR(6) NULL,
+gejala_dg DECIMAL(10,2) NULL,
+estimasi_jumlah_absolute_dg VARCHAR(6) NULL,
+    PRIMARY KEY(ID)
+)
+
+INSERT INTO `gagal_jantung`(`ID`, `umur`, `diagnosis_dokter_d`, `estimasi_jumlah_absolute_d`, `gejala_dg`, `estimasi_jumlah_absolute_dg`) VALUES ('','15','0.1','','',''),
+('','16','0.1','42613','',''),
+('','17','0.1','42613','',''),
+('','18','0.1','42613','',''),
+('','19','0.1','42613','',''),
+('','20','0.1','42613','',''),
+('','21','0.1','42613','',''),
+('','22','0.1','42613','',''),
+('','23','0.1','42613','',''),
+('','24','0.1','42613','',''),
+('','25','0.2','86006','',''),
+('','26','0.2','86006','',''),
+('','27','0.2','86006','',''),
+('','28','0.2','86006','',''),
+('','29','0.2','86006','',''),
+('','30','0.2','86006','',''),
+('','31','0.2','86006','',''),
+('','32','0.2','86006','',''),
+('','33','0.2','86006','',''),
+('','34','0.2','86006','',''),
+('','35','0.3','109852','',''),
+('','36','0.3','109852','',''),
+('','37','0.3','109852','',''),
+('','38','0.3','109852','',''),
+('','39','0.3','109852','',''),
+('','40','0.3','109852','',''),
+('','41','0.3','109852','',''),
+('','42','0.3','109852','',''),
+('','43','0.3','109852','',''),
+('','44','0.3','109852','',''),
+('','45','0.7','187342','',''),
+('','46','0.7','187342','',''),
+('','47','0.7','187342','',''),
+('','48','0.7','187342','',''),
+('','49','0.7','187342','',''),
+('','50','0.7','187342','',''),
+('','51','0.7','187342','',''),
+('','52','0.7','187342','',''),
+('','53','0.7','187342','',''),
+('','54','0.7','187342','',''),
+('','55','1.3','197142','',''),
+('','56','1.3','197142','',''),
+('','57','1.3','197142','',''),
+('','58','1.3','197142','',''),
+('','59','1.3','197142','',''),
+('','60','1.3','197142','',''),
+('','61','1.3','197142','',''),
+('','62','1.3','197142','',''),
+('','63','1.3','197142','',''),
+('','64','1.3','197142','',''),
+('','65','2.0','170398','',''),
+('','66','2.0','170398','',''),
+('','67','2.0','170398','',''),
+('','68','2.0','170398','',''),
+('','69','2.0','170398','',''),
+('','70','2.0','170398','',''),
+('','71','2.0','170398','',''),
+('','72','2.0','170398','',''),
+('','73','2.0','170398','',''),
+('','74','2.0','170398','',''),
+('','75','1.7','68147','',''),

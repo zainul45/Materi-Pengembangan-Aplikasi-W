@@ -1,0 +1,30 @@
+body{
+	border: 5px solid white;
+	padding: 25px;
+	margin-right: 300px;
+	margin-left: 300px;
+	margin-top: 50px;
+    font-family: fantasy;
+    background-color: limegreen;
+    text-align: center;
+}
+fieldset {
+     background-color: palegreen;
+}
+legend {
+    font-weight: bold;
+    font-size: 15pt;
+}
+.a {
+	border: 1px solid black;
+	padding: 100px;
+}
+.val {
+	color: red;
+}
+.field{
+	text-align: left;
+}
+.tbl{
+	margin: auto;
+}

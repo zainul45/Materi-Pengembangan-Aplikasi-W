@@ -1,0 +1,36 @@
+body{
+	margin: center;
+	margin-right: 200px;
+	margin-left: 200px;
+	font-family: calibri;
+}
+table{
+	border: 1px solid white;
+	text-align: center;
+	margin: auto;
+}
+tr{
+	border: 1px solid white;
+	text-align: center;
+}
+td{
+	border: 1px solid white;
+	text-align: center;
+}
+img{
+	width: 100px;
+	text-align: center;
+}
+h1{
+	text-align: center;
+}
+fieldset{
+	background-color: rgb(11, 160, 248);
+	margin-top: 25px;
+	text-align: center;
+}
+a{
+	background-color: rgb(255, 255, 255);
+	text-align: center;
+	border: 1px solid black;
+}
